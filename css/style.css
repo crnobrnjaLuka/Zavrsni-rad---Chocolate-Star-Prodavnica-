@@ -1,0 +1,1248 @@
+/*  reset styles */
+        @import url('https://fonts.googleapis.com/css?family=Quicksand');
+        @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Quicksand');
+        @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Kaushan+Script|Quicksand');
+        @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Kaushan+Script|Poiret+One|Quicksand');
+        @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway:200i');
+        @import url('https://fonts.googleapis.com/css?family=Caveat|Dancing+Script|Indie+Flower|Raleway:200i');
+        @import url('https://fonts.googleapis.com/css?family=Bad+Script|Kaushan+Script|Permanent+Marker|Shadows+Into+Light&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap&subset=latin-ext');
+
+
+
+
+			html, body{ 
+				width:100%; height:100%;
+				margin:0; padding:0; 
+			}
+			body *{ 
+				margin:0; padding:0; 
+				box-sizing:border-box;
+			}
+			a{ text-decoration:none;  }
+			ol, ul{ list-style-type:none; }
+            body{
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;        
+            }
+            .sl{
+                position: absolute;
+                z-index: -1;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;     
+            }            
+            .slUcitavanje{ visibility: hidden;}
+            .sl1{background-image: url("/chocolate_star/slike/minjoni_malina.JPG");}   
+            .sl2{background-image: url("/chocolate_star/slike/cokoladna_bomba.jpg");}
+            .sl3{ background-image: url("/chocolate_star/slike/vocni_tart_Chocolate_star_2.jpg");}
+            .sl4{ background-image: url("/chocolate_star/slike/cheese_cake.jpg");}            
+           
+            #logo{ 
+                width: 200px;
+                margin-left: 2em;
+                margin-top: 1em;  
+                cursor: pointer;
+                z-index: 100; 
+                position: relative;            
+            }
+            #cart{
+                margin-top: 70px;
+                margin-right: 120px;
+                display: inline-block;
+                float: right;
+            }
+            #cart:hover{
+                opacity: 0.7;
+            }
+            #cart a i{
+                font-size: 20px;
+                color: black;
+            }
+            #cart .cartCount{
+                background-color: #000;
+                border-radius: 50%;
+                color: #fff;
+                font-size: 17px;
+            }         
+            #menuButton{  
+                float:right;
+                margin-top: 64px;
+                margin-right: 30px;             
+                display: inline-block;
+                width:40px; height:40px;
+                z-index: 100;
+                position: relative;
+            }
+            #menuButton div{
+                border-top: white solid 2px;
+                width:100%;
+                margin-top:6px; height:1px;
+                transition: transform .6s, opacity .3s;
+                border-color: white;
+                opacity: 0.6;
+               /* transition: opacity .2s ease-in-out;*/
+            }
+            #menuButton:hover div.line1{
+                transform:translate(0, 6px) rotate(180deg);
+            }
+            #menuButton:hover div.line3{
+                transform:translate(0, -6px) rotate(-90deg);
+            }
+            #menuButton:hover div.line2{
+                opacity:0;
+            }
+            .arrow {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                margin-top: -35px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+            }
+            #arrow-left {
+                border-width: 30px 40px 30px 0;
+                border-color: transparent #fff transparent transparent;
+                opacity: 0.3;
+                left: 0;
+                margin-left: 30px;               
+            }
+            #arrow-left:hover {
+                opacity: 0.8;
+                transition: opacity .5s ease-in-out;
+            }
+            #arrow-right {
+                border-width: 30px 0 30px 40px;
+                border-color: transparent transparent transparent #fff;
+                opacity: 0.3;
+                right: 0;
+                margin-right: 30px;
+            }
+            #arrow-right:hover{
+                opacity: 0.8;
+                transition: opacity .5s ease-in-out;
+            }
+            @media only screen and (max-width:750px){
+               body{
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;  
+                } 
+                .sl{
+                    position: absolute;
+                    z-index: -1;
+                    background-attachment: fixed;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                    width: 100%; 
+                    overflow: hidden;     
+                }    
+                    .sl1{
+                        background-image: url("/chocolate_star/slike/minjoni_malina.JPG");
+                        background-position: 25%;
+                    }   
+                .sl2{
+                    background-image: url("/chocolate_star/slike/cokoladna_bomba.jpg");
+                    background-position: 80%;
+                }
+                .sl3{ 
+                    background-image: url("/chocolate_star/slike/vocni_tart_Chocolate_star_2.jpg");
+                    background-position: 20%;
+
+                }
+                .sl4{ 
+                    background-image: url("/chocolate_star/slike/cheese_cake.jpg");
+                    background-position: 80%;
+                }            
+               
+                      
+                #logo{ 
+                    width:150px;
+                    margin:0 auto;
+                    cursor: pointer;
+                    z-index: 100;            
+                }
+                #menuButton{  
+                    float:right;
+                    margin-top: 3.5em;
+                    margin-right: 2.5em;             
+                    display: inline-block;
+                    width:40px; height:40px;
+                    z-index: 100;
+                    position: relative;
+                }     
+            }            
+            #menu{
+                background-image: url("/chocolate_star/slike/menu_image_chocolate_star.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+                width: 100%;   
+                position: fixed;
+                z-index: 1;          
+            }
+            .gridContainer {
+                display: grid;
+                grid-template-columns: auto;
+            }
+            .gridContainer div img{
+                width: 300px;
+                line-height: 300px;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;       
+            }
+            .gridContainer > div{
+                padding: 20px; 
+                margin-left: auto;
+                margin-right: auto;
+                color:rgb(204, 204, 204);
+                font-family: 'Shadows Into Light Two', cursive;
+                font-size: 40px;
+                text-shadow: 1px 1px 1px rgb(36, 36, 36);                
+            }
+            .gridContainer div a{
+                color: white;
+            }
+            .links span{
+                padding: 0 20px;
+            }
+            .links span a i:hover{
+                opacity: 0.5;
+                transition: opacity .5s ease-in-out;
+            }
+            #clickHome:hover, #clickAbout:hover, #clickCakes:hover,#clickDecorations:hover,#clickContact:hover,#clickShop:hover {
+                opacity: 0.5;
+                transition: opacity .5s ease-in-out;
+            }
+            @media only screen and (max-width:750px){
+                #menu{
+                    /*background-image: url("menu_image_chocolate_star.jpg");*/
+                    background-attachment: fixed;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: center;
+                   /* height: 100%;
+                    width: 100%;   */
+                    position: fixed;
+                    z-index: 1;          
+                }
+                .gridContainer {
+                    display: grid;
+                    grid-template-columns: auto;                 
+                }
+                .gridContainer div img{
+                    width: 150px;
+                    line-height: 100px;
+                    justify-content: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    cursor: pointer;       
+                }
+                .gridContainer > div{
+                    padding: 15px; 
+                    margin-left: auto;
+                    margin-right: auto;   
+                    justify-content: center;
+                    text-align: center;
+                    color:rgb(204, 204, 204);
+                    font-family: 'Shadows Into Light Two', cursive;
+                    font-size: 25px;
+                    text-shadow: 1px 1px 1px rgb(36, 36, 36);                
+                }
+                .gridContainer div a{
+                    color: white;
+                }
+                .links span{
+                    padding: 0 20px;
+                }
+                .links span a i:hover{
+                    opacity: 0.5;
+                    transition: opacity .5s ease-in-out;
+                }
+                #clickHome:hover, #clickAbout:hover, #clickCakes:hover,#clickDecorations:hover,#clickContact:hover,#clickShop:hover {
+                    opacity: 0.5;
+                    transition: opacity .5s ease-in-out;
+                }
+             }             
+            #aboutContainer{
+                position: absolute;
+                height: 80vh;
+                width: 100%;
+                top:0;
+                left: 0;
+                background:white;
+                background-image: url("/chocolate_star/slike/about_chocolate_star.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .titleSubtitleContainer{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: auto;
+                margin: 0 auto;
+                width: 50%;  
+                height: 100%;
+                line-height: 50px;               
+            }
+            .titleHolder{              
+                margin-top: 40%;
+                background-color: transparent;
+            }
+            .titleSeparator{
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                vertical-align: middle;
+                margin: 23px 0 30px;
+            }
+            .titleSeparator::before{
+                content: " ";
+                position: absolute;
+                display: block;
+                width: 400px;
+                top: 0;
+                left: 0;
+                border-top: 2px solid white;
+            }
+            .titleHolder span{
+                color: white;
+                font-size: 50px;
+                font-family: 'Shadows Into Light Two', cursive;
+                text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+            }
+            .pageSubtitle span{
+                font-size: 30px;
+                font-family: 'Shadows Into Light Two', cursive;
+                text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+            }
+            #aboutGalleryContainer{
+               /* position: ; */
+                background-color: #fff;
+                width: 100%;
+                height: 100%;
+            }
+            #aboutFlexContainer{
+                display: flex; 
+                justify-content: center;         
+            }
+            .aboutFlexGallery{
+                margin-top: 100px;
+            }
+            .aboutFlexGallery h1{
+                font-size: 60px;
+                font-family: 'Shadows Into Light Two', cursive;
+                text-align: center;
+            }
+            .aboutFlexGallery p{
+                font-size: 40px;
+                font-family: 'Shadows Into Light Two', cursive;
+                margin-top: 100px;
+            }
+            @media only screen and (max-width:750px){
+                #aboutContainer{
+                    position: absolute;
+                    height: ;
+                    width: 100%;
+                    top:0;
+                    left: 0;
+                    background:white;
+                    background-image: url("/chocolate_star/slike/about_chocolate_star.jpg");
+                   /* background-attachment: fixed; */
+                   /* background-repeat: no-repeat; */
+                    background-size: cover;
+                    background-position: center;
+                }
+                .titleSubtitleContainer{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: auto;
+                    margin: 0 auto;
+                    width: 50%;  
+                    height: 100%;
+                    line-height: 50px;               
+                }
+                .titleHolder{              
+                    margin-top: 150px;
+                    /*background-color: transparent;*/
+                }
+                .titleSeparator{
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    vertical-align: middle;
+                    margin: 23px 0 30px;
+                }
+                .titleSeparator::before{
+                    content: " ";
+                    position: absolute;
+                    display: block;
+                    width: 200px;
+                    top: 0;
+                    left: 0;
+                    border-top: 2px solid white;
+                }
+                .titleHolder span{
+                    color: white;
+                    font-size: 50px;
+                    font-family: 'Shadows Into Light Two', cursive;
+                    text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+                }
+                .pageSubtitle span{
+                    font-size: 30px;
+                    font-family: 'Shadows Into Light Two', cursive;
+                    text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+                }
+                #aboutGalleryContainer{
+                    position: ;
+                    background-color: #fff;
+                    width: 100%;
+                    height: 100%;
+                }
+                #aboutFlexContainer{
+                    display: flex; 
+                    justify-content: center;         
+                }
+                .aboutFlexGallery{
+                    margin-top: 50px;
+                }
+                .aboutFlexGallery h1{
+                    font-size: 60px;
+                    font-family: 'Shadows Into Light Two', cursive;
+                    text-align: center;
+                }
+                .aboutFlexGallery p{
+                    font-size: 35px;
+                    font-family: 'Shadows Into Light Two', cursive;
+                    margin-top: 50px;
+                    margin-left: 30px;
+                    margin-right: 20px;
+                }
+                
+             }  
+             #cakesContainer{
+                position: absolute;
+                height: 90vh;
+                width: 100%;
+                top:0;
+                left: 0;
+                background-image: url("/chocolate_star/slike/chocolate_star_torte_kolaci.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .cakesTitleSubtitleContainer{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: auto;
+                margin: 0 auto;
+                width: 50%;  
+                height: 100%;
+                line-height: 50px;               
+            }
+            .cakesTitleHolder{              
+                margin-top: 30%;
+                background-color: transparent;
+            }
+            .cakesTitleSeparator{
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                vertical-align: middle;
+                margin: 23px 0 30px;
+            }
+            .cakesTitleSeparator::before{
+                content: " ";
+                position: absolute;
+                display: block;
+                width: 400px;
+                top: 0;
+                left: 0;
+                border-top: 2px solid white;
+            }
+            .cakesTitleHolder span{
+                color: white;
+                font-size: 50px;font-family: 'Shadows Into Light Two', cursive;
+                text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+            }
+            .cakesPageSubtitle span{
+                font-size: 30px;
+                text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+            }
+            #cakesGalleryContainer{
+                background-color: #fff;
+                width: 100%;
+            }
+            #cakesFlexContainer{
+                display: flex; 
+                justify-content: center;         
+            }
+            .flexGallery{
+                display: flex;
+                margin-top: 40px;
+            }
+            .flexGallery div{
+                flex: 1;
+                background-color: #f1f1f1;
+                margin: 20px;
+                text-align: center;
+                line-height: 75px;
+                font-family: 'Shadows Into Light Two', cursive;
+                font-size: 40px;
+            }
+            .flexGallery div img{
+                max-width: 100%;
+                height: auto;
+                border: 1px solid rgb(182, 182, 182);
+                border-radius: 5px;
+                padding: 5px;
+            }
+            .flexGallery div:hover {                    
+                opacity: 0.7; 
+                transition: opacity .5s ease-in-out;        
+            }
+            @media only screen and (max-width:750px){
+                #cakesContainer{
+                    position: absolute;
+                    height: 100vh;
+                    width: 100%;
+                    top:0;
+                    left: 0;
+                    background-image: url("/chocolate_star/slike/vocni_tart_Chocolate_star.jpg");
+                    background-attachment: fixed;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                .cakesTitleSubtitleContainer{
+                    line-height: 30px;               
+                }
+                .cakesTitleHolder {
+                    margin-top: 90%;
+                    background-color: transparent;
+                }
+                .cakesTitleHolder span{
+                    color: white;
+                    font-size: 35px;
+                    font-family: 'Shadows Into Light Two', cursive;
+                    text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+                }
+                .cakesTitleSeparator::before{
+                    content: " ";
+                    position: absolute;
+                    display: block;
+                    width: 180px;
+                    top: 0;
+                    left: 0;
+                    border-top: 2px solid white;
+                }
+                .cakesPageSubtitle span {
+                    font-size: 24px;
+                    text-shadow: 1px 1px 1px rgb(36, 36, 36);
+                }
+                #cakesFlexContainer{
+                    display: flex; 
+                    justify-content: flex-start;  
+                    flex-wrap: wrap;       
+                }
+                .flexGallery {
+                    flex-wrap: wrap;
+                    margin-top: 100px;
+                    margin-bottom: -150px;
+                }
+                .flexGallery div {
+                    flex: auto;
+                    background-color: #f1f1f1;
+                    margin: 20px;
+                    margin-top: 150px;
+                    text-align: center;
+                    line-height: 75px;
+                    font-family: 'Shadows Into Light Two', cursive;
+                    font-size: 40px;
+                    width:90%;
+                }
+                .flexGallery div img{
+                    /* width: 320px; */
+                    /* height: 475px; */
+                    /* width:80%; height:auto;  */
+                    border: 1px solid rgb(182, 182, 182);
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+
+            }
+            footer{
+                display: block;
+                text-align: center;
+                color: #CCCCCC;
+            }
+            footer #zag123{
+                width: 100%;
+                height: 350px;
+                background-color:black;           
+            }  
+            footer div span a{
+                color: #CCCCCC;
+            }
+            footer div img{
+                height: 220px;
+                color: #CCCCCC;
+                margin-top: 30px;
+            }
+            @media only screen and (max-width:750px){
+                footer{
+                    margin-top: 100%;
+                    text-align: center;
+                    color: #CCCCCC;
+                }
+                footer #zag123{
+                    width: 100%;
+                    height: 400px;
+                    padding: 20px;
+                    background-color:black;           
+                }  
+                footer div span a{
+                    color: #CCCCCC;
+                }
+                footer div img{
+                    height: 220px;
+                    color: #CCCCCC;
+                }
+            }
+            @media only screen and (max-width: 320px){
+                    .aboutFlexGallery p {
+                    font-size: 30px;
+                    font-family: 'Shadows Into Light Two', cursive;
+                     margin-top: 50px;
+                }
+            }
+            @media only screen and (max-width:320px){
+                footer{
+                    margin-top: 100%;
+                    text-align: center;
+                    color: #CCCCCC;
+                }
+                footer #zag123{
+                    width: 100%;
+                    padding: 40px;
+                    background-color:black;           
+                }  
+                footer div span a{
+                    color: #CCCCCC;
+                }
+                footer div img{
+                    height: 220px;
+                    color: #CCCCCC;
+                }
+            }
+
+
+            #decorationsContainer{
+                position: absolute;
+                height: 90vh;
+                width: 100%;
+                top:0;
+                left: 0;
+                background:white;
+                background-image: url("/chocolate_star/slike/dekoracija_chocolate_star_1.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .decorationsTitleSubtitleContainer{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: auto;
+                margin: 0 auto;
+                width: 50%;  
+                height: 100%;
+                line-height: 50px;               
+            }
+            .decorationsTitleHolder{              
+                vertical-align: middle;
+                background-color: transparent;
+            }
+            .decorationsTitleSeparator{
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                vertical-align: middle;
+                margin: 23px 0 30px;
+            }
+            .decorationsTitleSeparator::before{
+                content: " ";
+                position: absolute;
+                display: block;
+                width: 400px;
+                top: 0;
+                left: 0;
+                border-top: 1px solid #c9a74d;
+            }
+            .decorationsTitleHolder span{
+                color: #c9a74d;
+                font-size: 40px;
+            }
+            .decorationsPageSubtitle span{
+                font-size: 20px;
+            }
+            #decorationsGalleryContainer{
+                background-color: #fff;
+                /* width: 1500px; */
+                height: 1050px;
+                margin:0 auto;
+                margin-top: 30px;
+            }
+            #decorationsFlexContainer{
+                display: flex; 
+                flex-wrap: wrap;
+                padding: 0 5px;        
+            }
+            .decorationsGallery{
+                flex: 25%;
+                max-width: 25%;
+                padding: 0 5px;
+                overflow: hidden;
+            }
+            .decorationsGallery img{
+                margin-top: 8px;
+                vertical-align: middle;
+                transition: 2s;
+            }
+            .decorationsGallery img:hover{
+                transform: scale(1.1);
+              }
+            .opacity {
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0,0,0,.5);
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+            .gallery {
+                position: fixed;
+                width: 80vw;
+                height: 80vh;
+                top: 10vh;
+                left: 10vw;
+                background: black;
+            }
+            .gallery .close {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                color: #ffffff;
+                font-size: 20px;
+            }
+            .gl-arrow-left {
+                color:white;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 40px;
+                height: 40px;
+                border: 0;
+                font-size: 30px;
+                text-align: center;
+            }
+            .gl-arrow-right {
+                color:white;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 40px;
+                height: 40px;
+                border: 0;
+                font-size: 30px;
+                text-align: center;
+            }
+            .gl {
+                position: absolute;
+                z-index: -1;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: contain; /*cover;*/
+                background-position: center;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+            }
+            .svadbene.gl1 {
+                background-image: url("/chocolate_star/slike/chocolate_star_svadbene_torte_7.jpg");
+            }
+            .svadbene.gl2 {
+                background-image: url("/chocolate_star/slike/chocolate_star_svadbene_torte_2.jpg");
+            }
+            .svadbene.gl3 {
+                background-image: url("/chocolate_star/slike/chocolate_star_svadbene_torte_3.jpg");
+            }
+            .svadbene.gl4 {
+                background-image: url("/chocolate_star/slike/chocolate_star_svadbene_torte_8.jpg");
+            }
+            .svadbene.gl5 {
+                background-image: url("/chocolate_star/slike/chocolate_star_svadbene_torte_5.jpg");
+            }              
+            .rodjendanske.gl1 {
+                background-image: url("/chocolate_star/slike/chocolate_star_rodjendanske_3.jpg");
+            }
+            .rodjendanske.gl2 {
+                background-image: url("/chocolate_star/slike/chocolate_star_rodjendanske_4.jpg");
+            }
+            .rodjendanske.gl3 {
+                background-image: url("/chocolate_star/slike/chocolate_star_rodjendanske_2.jpg");
+            }
+            .rodjendanske.gl4 {
+                background-image: url("/chocolate_star/slike/chocolate_star_rodjendanske_5.jpg");
+            }
+            .rodjendanske.gl5 {
+                background-image: url("/chocolate_star/slike/chocolate_star_rodjendanske_6.jpg");
+            }
+            .deserti.gl1 {
+                background-image: url("/chocolate_star/slike/Chocolate_Star_Sitni_Kolaci_1.jpg");
+            }
+            .deserti.gl2 {
+                background-image: url("/chocolate_star/slike/Chocolate_Star_Sitni_Kolaci_2.jpg");
+            }
+            .deserti.gl3 {
+                background-image: url("/chocolate_star/slike/Chocolate_Star_Sitni_Kolaci_3.jpg");
+            }
+            .deserti.gl4 {
+                background-image: url("/chocolate_star/slike/Chocolate_Star_Sitni_Kolaci_4.jpg");
+            }
+            .deserti.gl5 {
+                background-image: url("/chocolate_star/slike/Chocolate_Star_Sitni_Kolaci_8.jpg");
+            }
+            .deserti.gl6 {
+                background-image: url("/chocolate_star/slike/Chocolate_Star_Sitni_Kolaci_9.jpg");
+            }
+            .deserti.gl7 {
+                background-image: url("/chocolate_star/slike/Chocolate_Star_Sitni_Kolaci_7.jpg");
+            }
+            .sitni.gl1 {
+                background-image: url("/chocolate_star/slike/Chocolate_Star_Slatki_Stolovi_7.jpg");
+            }
+            .sitni.gl2 {
+                background-image: url("/chocolate_star/slike/Chocolate_Star_Slatki_Stolovi_2.jpg");
+            }
+            .sitni.gl3 {
+                background-image: url("/chocolate_star/slike/Chocolate_Star_Slatki_Stolovi_9.jpg");
+            }
+            .sitni.gl4 {
+                background-image: url("/chocolate_star/slike/Chocolate_Star_Slatki_Stolovi_4.jpg");
+            }
+            .sitni.gl5 {
+                background-image: url("/chocolate_star/slike/Chocolate_Star_Slatki_Stolovi_5.jpg");
+            }
+            .sitni.gl6 {
+                background-image: url("/chocolate_star/slike/Chocolate_Star_Slatki_Stolovi_6.jpg");
+            }
+
+        @media only screen and (max-width:750px){
+            #decorationsGalleryContainer {
+                background-color: #fff;
+                height: 500px;
+                margin: 0 auto;
+                margin-top: 100px;
+            }
+            #decorationsFlexContainer {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 5px;
+            }
+            .decorationsGallery {
+                flex: 100%;
+                max-width: 50%;
+                padding: 0 5px;
+                overflow: hidden;
+            }
+        }
+
+
+        #shopContainer{
+            width: 100%;
+            margin-top:-28vh;
+            background-image: url("/chocolate_star/slike/chocolate_star_korpa.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .shopTitleSubtitleContainer{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: auto;
+            margin: 0 auto;
+            width: 50%;  
+            height: 100%;
+            line-height: 50px;               
+        }
+        .shopTitleHolder{              
+            margin-top: 30%;
+            margin-left: 15%;
+        }
+        .shopTitleHolder span{
+            color: white;
+            font-size: 50px;
+            font-family: 'Shadows Into Light Two', cursive;
+            text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+        }
+        .shopTitleSeparator{
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            vertical-align: middle;
+            margin: 23px 0 30px;
+        }
+        .shopTitleSeparator::before{
+            content: " ";
+            position: absolute;
+            display: block;
+            width: 400px;
+            top: 0;
+            left: 0;
+            border-top: 2px solid white;
+        }
+        .shopPageSubtitle span{
+            font-size: 30px;
+            text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+        }
+        #shopGalleryContainer{
+            background-color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        #shopGalleryContainer div span{
+            color: black;
+            font-family: 'Shadows Into Light Two', cursive;
+            font-size: 60px;
+        }
+        .shopTitle {
+            padding: 30px;
+        }   
+        #shopFlexContainer{
+            display: grid;
+            justify-content: center;
+            grid-column-gap: 100px;
+            grid-row-gap: 50px;
+            grid-template-columns: 250px 250px 250px;
+        }
+        .grid-item img{
+              width: 100%;
+          }
+        .kolaci_shop {
+            height: 180px;
+        }
+        .grid-item img:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .grid-item p {
+            padding: 10px;
+        }
+        .grid-item p a{
+            color: black;
+            font-family: 'Shadows Into Light Two', cursive;
+            font-size: 20px;
+        }
+        .grid-item p a:hover{
+            opacity: 0.5;
+        }
+        .grid-item p a i{
+            font-size: 15px;
+            padding: 10px;
+        }
+        #productContainer{
+            width: 100%;
+            margin-top:-28vh;
+            background-image: url("/chocolate_star/slike/Chocolate_star_031.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .productTitleSubtitleContainer{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: auto;
+            margin: 0 auto;
+            width: 50%;  
+            height: 100%;
+            line-height: 50px;               
+        }
+        .productTitleHolder{              
+            margin-top: 30%;
+            margin-left: 15%;
+        }
+        .productTitleHolder span{
+            color: white;
+            font-size: 50px;
+            font-family: 'Shadows Into Light Two', cursive;
+            text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+        }
+        .productTitleSeparator{
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            vertical-align: middle;
+            margin: 23px 0 30px;
+        }
+        .productTitleSeparator::before{
+            content: " ";
+            position: absolute;
+            display: block;
+            width: 400px;
+            top: 0;
+            left: 0;
+            border-top: 2px solid white;
+        }
+        .productPageSubtitle span{
+            font-size: 30px;
+            text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+        }
+        #productGalleryContainer{
+            width: 100%;
+            height: auto;
+            background-color: white;
+        }
+        .productGridContainer{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            padding: 40px;
+        }
+        /* .product{
+        }  */
+        .product img {
+            /* width: 100%; */
+            height: 800px ;
+            margin-left: 100px;
+        }
+        .product .kolaci{
+            width: 700px;
+            height: 500px;
+            margin-left: 0;
+        }
+        .product h1{
+            font-family: 'Shadows Into Light Two', cursive;
+            font-size: 40px;
+        }
+        .product  p span{
+            font-size: 25px;
+        }
+        .product > p:first-child{
+            margin:10px 0;
+        }
+        .product p{
+            margin: 20px 0;
+            font-size: 20px;
+            font-family: 'Shadows Into Light Two', cursive;
+        }
+        .product p:first-of-type{
+            margin-top: 10px;
+        }
+        .product p:last-of-type{
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        .product p:nth-child(4){
+            margin-bottom: 0;
+        }
+        .product p:nth-child(5){
+            margin-top: 0;
+        }
+        .select{
+            margin-top: 5px;
+        }
+        #slct{
+            width: 200px;
+        }
+        .amount{
+            margin-top: 30px;
+        }
+        .amount input{
+            width: 55px;
+            height: 30px;
+            margin-left: 0;
+            text-align: center;
+        }
+        .confirm{
+            margin-top: 30px;
+        }
+        .button {
+            width: 200px;
+            height: 50px;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 5px ;
+            color: white;
+        }
+        .button:hover{
+            cursor: pointer;
+            background-color: #e7e7e7;
+        }
+        #cartGalleryContainer{
+            background-color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        .cartGridContainer{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            /* grid-column-gap: 50px;
+            grid-row-gap: 50px; */
+            justify-content: center;
+            padding: 10px;
+            
+        }
+        .cartGridContainer .cartContent1{
+            width: auto;
+            grid-column: 1 / 7;
+            font-size: 30px;
+        }
+        .cartGridContainer > div{
+            display: grid;
+           width: 200px;
+           height: 80px;
+           justify-content: center;
+           align-items: center;
+           font-family: 'Shadows Into Light Two', cursive;
+           font-size: 25px;
+        }
+        .cartContent9 img{
+            width: 70px;
+            height: 50px;
+        }
+        .cartContent12 input{
+            width: 70px;
+            height: 50px;
+            margin-left: 0;
+        }
+        .cartGridContainer  .cartContent2{
+            border-bottom: 1px solid black;
+        }
+        .cartGridContainer  .cartContent3{
+            border-bottom: 1px solid black;
+        }
+        .cartGridContainer  .cartContent4{
+            align-items: end;
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+            font-size: 25px;
+        }
+        .cartGridContainer  .cartContent5{
+            align-items: end;
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+            font-size: 25px;
+        }
+        .cartGridContainer  .cartContent6{
+            align-items: end;
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+            font-size: 25px;
+        }
+        .cartGridContainer  .cartContent7{
+            align-items: end;
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+            font-size: 25px;
+        }
+        .tabela{
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            font-family: 'Shadows Into Light Two', cursive;
+            font-size: 25px;
+        }
+        .tabela table{
+            border-collapse: collapse;
+            width: 1200px;
+            margin-top: 10%;
+        }
+        .tabela th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        #dostava{
+            font-family: 'Shadows Into Light Two', cursive;
+            font-size: 20px;
+        }
+        #dostava option span{
+            font-size: 15px;
+        } 
+        #kupi {
+            margin-left: 500px;
+            width: 200px;
+            height: 100px;
+            background-color: black; 
+            border: 1px solid black;
+            border-radius: 12px;
+            color: white;
+            padding: 10px 28px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Shadows Into Light Two', cursive;
+            font-size: 25px;
+        }
+        #kupi:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        #user td, input {
+            margin-left: 600px;
+            width: 400px;
+            height: 40px;
+        }
+        #kupi_konacno{
+            margin-left: 500px;
+            width: 200px;
+            height: 100px;
+            background-color: black; 
+            border: 1px solid black;
+            border-radius: 12px;
+            color: white;
+            padding: 10px 28px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Shadows Into Light Two', cursive;
+            font-size: 25px;
+        }
+        #kupi_konacno:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+         table#user{ display:none;}

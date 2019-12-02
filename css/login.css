@@ -1,0 +1,45 @@
+
+body *{ 
+    margin:0; padding:0; 
+    box-sizing:border-box;
+}
+a{ text-decoration:none;  }
+ol, ul{ list-style-type:none; }
+body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/chocolate_star/slike/Chocolate-Star-Cake-Torte-Kolaci-Catering-Beograd.jpg), linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5));
+}
+.login-box{
+    max-width: 700px;
+    float: none;
+    margin: 300px auto;
+}
+.login-left{
+    background: rgba(211,211,211,0.5);
+    padding: 30px;
+}
+.bttn{
+    margin-top: 10px;
+    background-color: darkgray;
+    border: 1px solid black;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.bttn:hover{
+    opacity: 0.8;
+}
